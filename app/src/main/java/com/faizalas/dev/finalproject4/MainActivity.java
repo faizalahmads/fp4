@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        admin = findViewById(R.id.btn_admin);
-        customer = findViewById(R.id.btn_customer);
+        admin = findViewById(R.id.admin);
+        customer = findViewById(R.id.customer);
 
         admin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), adminlogin.class);
                 startActivity(intent);
             }
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }

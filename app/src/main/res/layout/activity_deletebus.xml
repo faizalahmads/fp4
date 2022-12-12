@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"/>
+        app:layout_constraintVertical_bias="0.128"></TextView>
 
     <EditText
         android:id="@+id/busid"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754"/>
+        app:layout_constraintVertical_bias="0.754"></EditText>
 
     <Button
         android:id="@+id/deletebus"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871"/>
+        app:layout_constraintVertical_bias="0.871"></Button>
 
     <Button
         android:id="@+id/button03"

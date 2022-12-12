@@ -10,43 +10,45 @@
     android:padding="30dp"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="176dp"
+        android:layout_height="65dp"
+        android:text="LOGIN AS ADMIN"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691"></Button>
+
+    <Button
+        android:id="@+id/customer"
+        android:layout_width="162dp"
+        android:layout_height="73dp"
+        android:text="LOGIN AS CUSTOMER"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902"></Button>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="319dp"
-        android:layout_height="319dp"
+        android:layout_height="346dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/img"/>
+        app:srcCompat="@drawable/img" />
 
-
-    <Button
-        android:id="@+id/btn_admin"
-        android:layout_width="176dp"
-        android:layout_height="65dp"
-        android:text="LOGIN ADMIN"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691"/>
-
-    <Button
-        android:id="@+id/btn_customer"
-        android:layout_width="174dp"
-        android:layout_height="65dp"
-        android:text="LOGIN CUSTOMER"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902"/>
 
 
 

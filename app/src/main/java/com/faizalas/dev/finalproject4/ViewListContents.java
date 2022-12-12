@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class ViewListContents extends AppCompatActivity {
 
     DBHelper myDB;
-    ListView listView;
     User user;
 
     @Override
@@ -25,22 +24,24 @@ public class ViewListContents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_list_contents);
 
-        listView = findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.listView);
         myDB = new DBHelper(this);
 
+        //populate an ArrayList<String> from the database and then view it
         ArrayList<String> theList = new ArrayList<>();
         Cursor data = myDB.viewbuses();
-        if (data.getCount() == 0) {
-            Toast.makeText(this, "There are no contents in this list!", Toast.LENGTH_SHORT).show();
-        }
-        else {
-            while (data.moveToNext()) {
+        if(data.getCount() == 0){
+            Toast.makeText(this, "There are no contents in this list!",Toast.LENGTH_LONG).show();
+        }else{
+            while(data.moveToNext()) {
+
                 theList.add("ID:"+"   "+data.getString(0)+"                             "
                         +"FROM:"+"  "+data.getString(1) +"                             "
                         +"To:"+"  "+data.getString(2)+"                              "
                         +"Date:"+"  " +data.getString(3)+"                              "
                         +"Seats:"+"  "+data.getString(4));
                 theList.add("");
+
 
                 ListAdapter listAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,theList);
                 listView.setAdapter(listAdapter);
@@ -88,7 +89,7 @@ public class ViewListContents extends AppCompatActivity {
                             Intent intent = new Intent(view.getContext(), SeatSelection.class);
                             startActivity(intent);
                         }
-                        if (position == 20) {
+                        if (position == 20){
                             Intent intent = new Intent(view.getContext(), SeatSelection.class);
                             startActivity(intent);
                         }

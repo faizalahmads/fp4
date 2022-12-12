@@ -11,48 +11,48 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class adminpanel extends AppCompatActivity {
-    
-    Button add, update, delete, view, logout;
+
+    Button add, update, delete, view, end;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adminpanel);
-        
-        add = findViewById(R.id.btn_add);
-        update = findViewById(R.id.btn_update);
-        delete = findViewById(R.id.btn_delete);
-        view = findViewById(R.id.btn_View);
-        logout = findViewById(R.id.btn_logout);
+
+        add = findViewById(R.id.add);
+        update=findViewById(R.id.update);
+        delete=findViewById(R.id.delete);
+        view = findViewById(R.id.view);
+        end = findViewById(R.id.logout);
         DBHelper DB = new DBHelper(this);
-        
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), addbus.class);
                 startActivity(intent);
             }
         });
-        
+
         update.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), updatebus.class);
                 startActivity(intent);
             }
         });
-        
+
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), deletebus.class);
                 startActivity(intent);
             }
         });
-        
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Cursor result = DB.viewbuses();
                 if (result.getCount()==0){
                     Toast.makeText(adminpanel.this, "No Entry Exists", Toast.LENGTH_SHORT).show();
@@ -60,11 +60,11 @@ public class adminpanel extends AppCompatActivity {
                 }
                 StringBuffer buffer = new StringBuffer();
                 while (result.moveToNext()){
-                    buffer.append("ID"+result.getString(0)+"\n");
-                    buffer.append("Departure"+result.getString(1)+"\n");
-                    buffer.append("Arrival"+result.getString(2)+"\n");
-                    buffer.append("Date"+result.getString(3)+"\n");
-                    buffer.append("Total Seates"+result.getString(4)+"\n\n");
+                    buffer.append("ID :"+result.getString(0)+"\n");
+                    buffer.append("Departure :"+result.getString(1)+"\n");
+                    buffer.append("Arrival :"+result.getString(2)+"\n");
+                    buffer.append("Date :"+result.getString(3)+"\n");
+                    buffer.append("Total Seats :"+result.getString(4)+"\n\n");
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(adminpanel.this);
                 builder.setCancelable(true);
@@ -73,9 +73,9 @@ public class adminpanel extends AppCompatActivity {
                 builder.show();
             }
         });
-        logout.setOnClickListener(new View.OnClickListener() {
+        end.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }

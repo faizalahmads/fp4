@@ -14,15 +14,15 @@
         android:id="@+id/textView3"
         android:layout_width="133dp"
         android:layout_height="73dp"
-        android:text="Login"
-        android:textColor="@color/design_default_color_on_primary"
+        android:text="LogIn"
+        android:textColor="@color/design_default_color_primary"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <EditText
         android:id="@+id/user"
@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.624"
-        app:layout_editor_absoluteX="30dp"/>
+        tools:layout_editor_absoluteX="30dp"></EditText>
 
     <EditText
         android:id="@+id/pass"
@@ -54,36 +54,36 @@
         app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708"/>
+        app:layout_constraintVertical_bias="0.708"></EditText>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/login"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Login"
         android:layout_marginTop="20dp"
+        android:text="LOGIN"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"/>
+        app:layout_constraintVertical_bias="0.793"></Button>
 
     <Button
-        android:id="@+id/btn_signUp"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Creat New Account"
+        android:text="Create New Account"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904"/>
+        app:layout_constraintVertical_bias="0.904"></Button>
 
     <Button
-        android:id="@+id/btn_Back"
+        android:id="@+id/button04"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -92,10 +92,10 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"/>
+        app:layout_constraintVertical_bias="0.008" />
 
     <ImageView
-        android:id="@+id/imageBorder"
+        android:id="@+id/imageView6"
         android:layout_width="350dp"
         android:layout_height="316dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,6 +104,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031"
-        android:src="@drawable/img"/>
+        app:srcCompat="@drawable/img" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

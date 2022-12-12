@@ -23,7 +23,7 @@
         android:layout_width="413dp"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
-        android:background="#FF4CAF50"
+        android:background="@color/material_dynamic_primary0"
         android:text="BUY NOW"
         android:textColor="@android:color/white"
         app:backgroundTint="#03A9F4"

@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class deletebus extends AppCompatActivity {
 
-    Button deletebus, back;
     EditText busid;
+    Button deletebus, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +26,19 @@ public class deletebus extends AppCompatActivity {
 
         deletebus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String id = busid.getText().toString();
                 if (id.equals(""))
                 {
                     Toast.makeText(deletebus.this, "Please Enter Bus ID", Toast.LENGTH_SHORT).show();
                 }
-                else {
-                    Boolean checkid = DB.checkid(id);
-                    if (checkid == true) {
+                else
+                {
+                    Boolean checkid= DB.checkid(id);
+                    if (checkid==true){
                         Boolean delete = DB.deleteBus(id);
                         if (delete==true){
-                            Toast.makeText(deletebus.this, "Bus delete successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(deletebus.this, "Bus deleted successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), adminpanel.class);
                             startActivity(intent);
                         }
@@ -51,10 +52,9 @@ public class deletebus extends AppCompatActivity {
                 }
             }
         });
-
         back.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), adminpanel.class);
                 startActivity(intent);
             }

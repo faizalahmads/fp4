@@ -9,34 +9,31 @@ import android.widget.Button;
 
 public class Booking extends AppCompatActivity {
 
-    Button view, logout;
+    Button btnView, Back;
     DBHelper myDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-
-        view = findViewById(R.id.btnview);
-        logout = findViewById(R.id.button02);
+        btnView = (Button) findViewById(R.id.btnview);
+        Back = findViewById(R.id.button02);
         myDB = new DBHelper(this);
 
-        view.setOnClickListener(new View.OnClickListener() {
+        btnView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(Booking.this, ViewListContents.class);
                 startActivity(intent);
             }
         });
-
-        logout.setOnClickListener(new View.OnClickListener() {
+        Back.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
-
 
     }
 }
