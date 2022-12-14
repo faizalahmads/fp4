@@ -15,95 +15,96 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SignUp"
-        android:textColor="#396FCA"
+        android:textColor="@color/main_color"
         android:textSize="50dp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="262dp"
-        android:layout_height="243dp"
-        app:srcCompat="@drawable/img"
-        android:layout_marginBottom="30dp"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
 
     <EditText
         android:id="@+id/et1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_custom"
+        android:drawableStart="@drawable/ic_nama"
+        android:drawablePadding="12dp"
         android:hint="Nama"
-        android:textColor="@color/black"
-        android:textColorHint="#6F6E6E"
-        android:textSize="25dp"
-        android:layout_marginBottom="10dp" />
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/et2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
         android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_custom"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
         android:textColor="@color/black"
-        android:textColorHint="#6F6E6E"
-        android:textSize="25dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="15dp" />
 
 
     <EditText
         android:id="@+id/et3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
-        android:drawableRight="@drawable/user"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_custom"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="12dp"
         android:hint="Username"
-        android:textColor="@color/black"
-        android:textColorHint="#6F6E6E"
-        android:textSize="25dp"
-        android:layout_marginBottom="10dp" />
-
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/et4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
-        android:drawableRight="@drawable/pass"
-        android:inputType="textVisiblePassword"
         android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_custom"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/pass"
+        android:drawablePadding="12dp"
         android:textColor="@color/black"
-        android:textColorHint="#6F6E6E"
-        android:textSize="25dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="15dp"/>
 
 
     <EditText
         android:id="@+id/et5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
-        android:drawableRight="@drawable/pass"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_custom"
+        android:drawableStart="@drawable/pass"
+        android:drawablePadding="12dp"
         android:hint="Admin Code"
-        android:textColor="@color/black"
-        android:textColorHint="#6F6E6E"
-        android:textSize="25dp"
-        android:layout_marginBottom="30dp" />
-
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="170dp"
-        android:layout_height="59dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_square"
         android:text="SIGNUP"
-        android:textSize="20dp"
         android:textColor="@color/white"
-        android:background="#396FCA"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="96dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:text="BACK"
-        android:textSize="20dp" />
+        android:background="@drawable/edittext_custom"/>
+
 
 </LinearLayout >

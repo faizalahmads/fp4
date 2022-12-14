@@ -16,60 +16,63 @@
         android:layout_height="wrap_content"
         android:text="LOGOUT"
         android:layout_gravity="right"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         android:textStyle="bold"
-        android:background="#CA3939"
+        android:background="@drawable/button_logout"
         android:layout_marginBottom="30dp"/>
 
     <ImageView
-        android:layout_width="328dp"
-        android:layout_height="248dp"
-        app:srcCompat="@drawable/img"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/add"
         android:layout_marginBottom="30dp" />
 
     <Button
         android:id="@+id/add"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="ADD BUSES"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add Buses"
+        android:textAllCaps="false"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="#396FCA"
+        android:background="@drawable/button_square"
         android:layout_marginBottom="15dp"/>
 
     <Button
         android:id="@+id/update"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="UPDATE BUS"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update Bus"
+        android:textAllCaps="false"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="#396FCA"
+        android:background="@drawable/button_square"
         android:layout_marginBottom="15dp" />
 
     <Button
         android:id="@+id/delete"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="DELETE BUS"
-        android:textSize="22dp"
-        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_square"
+        android:text="Delete Bus"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:background="#396FCA"
-        android:layout_marginBottom="15dp" />
+        android:textSize="22dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/view"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="VIEW ALL BUSES"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="View All Buses"
+        android:textAllCaps="false"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="#396FCA"/>
-
+        android:background="@drawable/button_square"/>
 
 
 

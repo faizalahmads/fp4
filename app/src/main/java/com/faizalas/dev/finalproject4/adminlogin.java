@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class adminlogin extends AppCompatActivity {
 
     EditText username, password;
-    Button signin, signup, back;
+    TextView signup;
+    Button signin, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

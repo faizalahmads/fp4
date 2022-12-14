@@ -17,21 +17,21 @@
         android:gravity="center_horizontal"
         android:text="Delete Buses"
         android:textAlignment="center"
-        android:textColor="@color/design_default_color_primary"
-        android:textSize="34sp"
+        android:textColor="@color/main_color"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"></TextView>
+        app:layout_constraintVertical_bias="0.095"/>
 
     <EditText
         android:id="@+id/busid"
-        android:layout_width="351dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/textview_border"
-        android:gravity="center_horizontal"
+        android:background="@drawable/edittext_custom"
         android:hint="ID"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -41,43 +41,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754"></EditText>
+        app:layout_constraintVertical_bias="0.879"/>
 
     <Button
         android:id="@+id/deletebus"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete BUS"
-        android:textSize="25dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871"></Button>
+        app:layout_constraintVertical_bias="0.976"/>
 
     <Button
         android:id="@+id/button03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:textColor="@color/main_color"
+        android:background="@drawable/button_login_as_customer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="286dp"
-        android:layout_height="244dp"
+        android:layout_width="500dp"
+        android:layout_height="265dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastikan memasukkan ID yang tepat"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

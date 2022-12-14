@@ -15,10 +15,10 @@
         android:layout_width="103dp"
         android:layout_height="56dp"
         android:text="LOGOUT"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         android:textStyle="bold"
-        android:background="#CA3939"
-        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_logout"
+        android:layout_marginBottom="15dp"
         android:layout_gravity="right"/>
 
     <TextView
@@ -26,26 +26,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome"
-        android:textColor="#396FCA"
+        android:textColor="@color/main_color"
         android:textSize="48sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
 
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="318dp"
+        android:layout_width="500dp"
         android:layout_height="265dp"
-        app:srcCompat="@drawable/img"
-        android:layout_marginBottom="15dp"/>
+        app:srcCompat="@drawable/welcome"
+        android:layout_marginBottom="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih bus kesukaan anda"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:id="@+id/btnview"
-        android:layout_width="228dp"
+        android:layout_width="match_parent"
         android:layout_height="68dp"
         android:text="View Busses"
         android:textSize="25dp"
         android:textColor="@color/white"
-        android:background="#396FCA"
+        android:background="@drawable/button_square"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp" />
 
 
