@@ -7,14 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class adminlogin extends AppCompatActivity {
 
     EditText username, password;
-    TextView signup;
-    Button signin, back;
+    Button signin, signup, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +48,18 @@ public class adminlogin extends AppCompatActivity {
             }
         });
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), adminsignup.class);
-                startActivity(intent);
-            }
-        });
-
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), adminsignup.class);
                 startActivity(intent);
             }
         });

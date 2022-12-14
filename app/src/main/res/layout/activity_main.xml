@@ -12,46 +12,42 @@
 
     <Button
         android:id="@+id/admin"
-        android:layout_width="match_parent"
+        android:layout_width="176dp"
         android:layout_height="65dp"
-        android:background="@drawable/button_login_as_admin"
-        android:text="Login As Admin"
-        android:textColor="@color/white"
+        android:text="LOGIN AS ADMIN"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.599"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691"></Button>
 
     <Button
         android:id="@+id/customer"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_login_as_customer"
+        android:layout_width="162dp"
+        android:layout_height="73dp"
         android:text="LOGIN AS CUSTOMER"
-        android:textColor="@color/main_color"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin"
-        app:layout_constraintVertical_bias="0.1"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902"></Button>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="500dp"
+        android:layout_width="319dp"
         android:layout_height="346dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072"
-        app:srcCompat="@drawable/chill" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img" />
 
 
 

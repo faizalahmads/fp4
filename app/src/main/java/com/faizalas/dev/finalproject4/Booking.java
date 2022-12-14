@@ -16,7 +16,7 @@ public class Booking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-        btnView = findViewById(R.id.btnview);
+        btnView = (Button) findViewById(R.id.btnview);
         Back = findViewById(R.id.button02);
         myDB = new DBHelper(this);
 

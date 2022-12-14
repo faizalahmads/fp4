@@ -16,7 +16,6 @@ public class SeatSelection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seat_selection);
-
         btncardpay = findViewById(R.id.btncardpay);
 
         btncardpay.setOnClickListener(new View.OnClickListener() {

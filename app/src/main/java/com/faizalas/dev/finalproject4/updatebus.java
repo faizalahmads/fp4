@@ -23,8 +23,8 @@ public class updatebus extends AppCompatActivity {
         from = findViewById(R.id.from);
         to = findViewById(R.id.to);
         dt = findViewById(R.id.date);
-        back = findViewById(R.id.button06);
         seats = findViewById(R.id.seats);
+        back = findViewById(R.id.button06);
         updatebus = findViewById(R.id.updatebus);
         DBHelper DB = new DBHelper(this);
 

@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class adminsignup extends AppCompatActivity {
 
-    EditText et1, et2, et3, et4, et5;
     Button btnsignup, btnsignin;
+    EditText et1, et2, et3, et4, et5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

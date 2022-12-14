@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class addbus extends AppCompatActivity {
 
     EditText busid, from, to, dt, seats;
-    Button addbus;
+    Button addbus, back1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class addbus extends AppCompatActivity {
         dt = findViewById(R.id.date);
         seats = findViewById(R.id.seats);
         addbus = findViewById(R.id.addbus);
+        back1 =findViewById(R.id.button2);
         DBHelper DB = new DBHelper(this);
 
         addbus.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +61,20 @@ public class addbus extends AppCompatActivity {
                 }
             }
         });
+        /*back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), adminpanel.class);
+                startActivity(intent);
+            }
+        });*/
 
+        back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), adminpanel.class);
+                startActivity(intent);
+            }
+        });
     }
 }

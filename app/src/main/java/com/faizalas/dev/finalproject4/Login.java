@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
 
     EditText username, password;
-    Button signin, back, signup;
+    Button signin, signup, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
