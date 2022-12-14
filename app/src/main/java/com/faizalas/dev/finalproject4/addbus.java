@@ -10,9 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class addbus extends AppCompatActivity {
-    
-    Button addbus, logout;
+
     EditText busid, from, to, dt, seats;
+    Button addbus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,23 +25,24 @@ public class addbus extends AppCompatActivity {
         dt = findViewById(R.id.date);
         seats = findViewById(R.id.seats);
         addbus = findViewById(R.id.addbus);
-        logout = findViewById(R.id.button2);
         DBHelper DB = new DBHelper(this);
-        
+
         addbus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String id = busid.getText().toString();
                 String departure = from.getText().toString();
                 String arrival = to.getText().toString();
                 String date = dt.getText().toString();
                 String total_seats = seats.getText().toString();
-                
-                if (id.equals("") || departure.equals("") || arrival.equals("") || date.equals("") || seats.equals("")){
-                    Toast.makeText(addbus.this, "Please enter all field", Toast.LENGTH_SHORT).show();
+
+                if (id.equals("") || departure.equals("") || arrival.equals("") || date.equals("") || total_seats.equals(""))
+                {
+                    Toast.makeText(addbus.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 }
-                else {
-                    Boolean checkid = DB.checkid(id);
+                else
+                {
+                    Boolean checkid= DB.checkid(id);
                     if (checkid==false){
                         Boolean insert = DB.insertBus(id,departure,arrival,date,total_seats);
                         if (insert==true){
@@ -60,12 +61,5 @@ public class addbus extends AppCompatActivity {
             }
         });
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), adminpanel.class);
-                startActivity(intent);
-            }
-        });
     }
 }

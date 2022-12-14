@@ -10,8 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
+
     EditText username, password;
-    Button login, back, signUp;
+    Button signin, back, signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +21,14 @@ public class Login extends AppCompatActivity {
 
         username = findViewById(R.id.user);
         password = findViewById(R.id.pass);
-        login = findViewById(R.id.btn_login);
-        back = findViewById(R.id.btn_Back);
-        signUp = findViewById(R.id.btn_signUp);
+        signin = findViewById(R.id.login);
+        back = findViewById(R.id.button04);
+        signup = findViewById(R.id.signup);
         DBHelper DB = new DBHelper(this);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
 
@@ -36,8 +37,8 @@ public class Login extends AppCompatActivity {
                 else{
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if (checkuserpass==true){
-                        Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), Booking.class);
+                        Toast.makeText(Login.this, "LogIn Successful", Toast.LENGTH_SHORT).show();
+                        Intent intent= new Intent(getApplicationContext(), Booking.class);
                         startActivity(intent);
                     }
                     else{
@@ -49,16 +50,19 @@ public class Login extends AppCompatActivity {
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
             }
         });
 
-        signUp.setOnClickListener(new View.OnClickListener() {
+
+
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUp.class);
+                startActivity(intent);
             }
         });
     }

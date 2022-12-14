@@ -11,15 +11,15 @@ import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
-    Button btnsignup, btnsignin;
     EditText et1, et2, et3, et4;
+    Button btnsignup, btnsignin;
     DBHelper DB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-
         btnsignup = findViewById(R.id.btn1);
         btnsignin = findViewById(R.id.btn2);
         et1 = findViewById(R.id.et1);
@@ -30,14 +30,14 @@ public class SignUp extends AppCompatActivity {
 
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String fullname = et1.getText().toString();
                 String email = et2.getText().toString();
                 String username = et3.getText().toString();
                 String password = et4.getText().toString();
 
-                if (fullname.equals("") || email.equals("") || username.equals("") || password.equals(""))
-                    Toast.makeText(SignUp.this, "Please enter all field", Toast.LENGTH_SHORT).show();
+                if (fullname.equals("") ||email.equals("")||username.equals("")||password.equals(""))
+                    Toast.makeText(SignUp.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 else {
                     Boolean checkuser = DB.checkusername(username);
                     if (checkuser==false){
@@ -48,7 +48,7 @@ public class SignUp extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else {
-                            Toast.makeText(SignUp.this, "Registered Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUp.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                     else {
@@ -61,7 +61,7 @@ public class SignUp extends AppCompatActivity {
         });
         btnsignin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }

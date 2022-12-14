@@ -23,8 +23,8 @@ public class payment_activity extends AppCompatActivity {
 
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SeatSelection.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),SeatSelection.class);
                 startActivity(intent);
             }
         });
