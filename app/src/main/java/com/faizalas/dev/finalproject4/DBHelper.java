@@ -140,7 +140,23 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Boolean seats(String seats) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("seats", seats);
+        long result = MyDB.insert("buses", null, contentValues);
+        if (result == -1) return false;
+        else
+            return true;
+    }
+
     public Cursor viewbuses() {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from buses", null);
+        return cursor;
+    }
+
+    public Cursor viewticket(){
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor = MyDB.rawQuery("Select * from buses", null);
         return cursor;
