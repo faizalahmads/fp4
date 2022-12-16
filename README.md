@@ -5,4 +5,4 @@ Simon Kevin Siregar : Mengerjakan fitur tampilan
 Untuk login Create akun terlebih dahulu
 untuk Admin Code silahkan input 161222
 
-untuk memilih bus admin harus add bus terlebih dahulu
+Untuk memilih bus admin harus add bus terlebih dahulu
