@@ -42,7 +42,7 @@ public class adminsignup extends AppCompatActivity {
                 else {
                     Boolean checkadminuser = DB.checkadminusername(username);
                     if (checkadminuser==false){
-                        if (code.equals("56964")){
+                        if (code.equals("161222")){
                             Boolean insert = DB.insertadmin(fullname,email,username,password);
                             if (insert==true){
                                 Toast.makeText(adminsignup.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
