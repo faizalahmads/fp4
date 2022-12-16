@@ -61,14 +61,14 @@ public class adminpanel extends AppCompatActivity {
                 StringBuffer buffer = new StringBuffer();
                 while (result.moveToNext()){
                     buffer.append("ID :"+result.getString(0)+"\n");
-                    buffer.append("Departure :"+result.getString(1)+"\n");
-                    buffer.append("Arrival :"+result.getString(2)+"\n");
-                    buffer.append("Date :"+result.getString(3)+"\n");
-                    buffer.append("Total Seats :"+result.getString(4)+"\n\n");
+                    buffer.append("Kota Asal :"+result.getString(1)+"\n");
+                    buffer.append("Kota Tujuan :"+result.getString(2)+"\n");
+                    buffer.append("Tanggal :"+result.getString(3)+"\n");
+                    buffer.append("Total Bangku :"+result.getString(4)+"\n\n");
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(adminpanel.this);
                 builder.setCancelable(true);
-                builder.setTitle("ALL BUSES DETAILS");
+                builder.setTitle("DETAIL BUS");
                 builder.setMessage(buffer.toString());
                 builder.show();
             }

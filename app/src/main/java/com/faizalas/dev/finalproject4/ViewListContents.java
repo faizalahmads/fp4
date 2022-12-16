@@ -36,10 +36,10 @@ public class ViewListContents extends AppCompatActivity {
             while(data.moveToNext()) {
 
                 theList.add("ID:"+"   "+data.getString(0)+"                             "
-                        +"FROM:"+"  "+data.getString(1) +"                             "
-                        +"To:"+"  "+data.getString(2)+"                              "
-                        +"Date:"+"  " +data.getString(3)+"                              "
-                        +"Seats:"+"  "+data.getString(4));
+                        +"Kota Asal:"+"  "+data.getString(1) +"                             "
+                        +"Kota Tujuan:"+"  "+data.getString(2)+"                              "
+                        +"Tanggal:"+"  " +data.getString(3)+"                              "
+                        +"Total Bangku:"+"  "+data.getString(4));
                 theList.add("");
 
 

@@ -60,7 +60,7 @@
         android:background="@drawable/edittext_custom"
         android:drawableStart="@drawable/ic_kota"
         android:drawablePadding="12dp"
-        android:hint="Kota Tujuan"
+        android:hint="Kota Asal"
         android:textColor="@color/black"
         android:textColorHint="#6F6E6E"
         android:textSize="25dp" />
@@ -74,7 +74,7 @@
         android:background="@drawable/edittext_custom"
         android:drawableStart="@drawable/ic_kota"
         android:drawablePadding="12dp"
-        android:hint="Kota Asal"
+        android:hint="Kota Tujuan"
         android:textColor="@color/black"
         android:textColorHint="#6F6E6E"
         android:layout_marginBottom="10dp"
